@@ -1,0 +1,269 @@
+OPERATORS
+
+1)To print the sum of two numbers:
+
+#include<stdio.h>
+int main(){
+    int num1,num2,sum;
+    printf("enter the number 1: ");
+    scanf("%d",&num1);
+    printf("enter the number 2: ");
+    scanf("%d",&num2);
+    sum=num1+num2;
+    printf("%d",sum);
+    return 0;
+}
+
+2)To print the difference of two numbers:
+
+#include<stdio.h>
+int main(){
+    int num1,num2,diff;
+    printf("enter the number 1: ");
+    scanf("%d",&num1);
+    printf("enter the number 2: ");
+    scanf("%d",&num2);
+    diff=num1-num2;
+    printf("%d",diff);
+    return 0;
+}
+
+3)To print the product of two numbers:
+
+#include<stdio.h>
+int main(){
+    int num1,num2,prod;
+    printf("enter the number 1: ");
+    scanf("%d",&num1);
+    printf("enter the number 2: ");
+    scanf("%d",&num2);
+    prod=num1*num2;
+    printf("%d",prod);
+    return 0;
+}
+
+4)To print the remainder of two numbers:
+
+#include<stdio.h>
+int main(){
+    int num1,num2,rem;
+    printf("enter the number 1: ");
+    scanf("%d",&num1);
+    printf("enter the number 2: ");
+    scanf("%d",&num2);
+    rem=num1/num2;
+    printf("%d",rem);
+    return 0;
+}
+5)To print the modulo of two numbers:
+
+ #include<stdio.h>
+int main(){
+    int num1,num2,mod;
+    printf("enter the number 1: ");
+    scanf("%d",&num1);
+    printf("enter the number 2: ");
+    scanf("%d",&num2);
+    mod=num1%num2;
+    printf("%d",mod);
+    return 0;
+}
+
+6)swapping the two numbers using third variable:
+
+#include<stdio.h>
+int main(){
+    int num1,num2,temp;
+    printf("before swp\n");
+    printf("enter the number 1: ");
+    scanf("%d",&num1);
+    printf("enter the number 2: ");
+    scanf("%d",&num2);
+    printf("after swp\n");
+    temp=num1;
+    num1=num2;
+    num2=temp;
+    printf("number 1:%d\nnumber 2:%d",num1,num2);
+    
+    return 0;
+}
+
+7)swapping the two numbers without using third variable:
+
+#include<stdio.h>
+int main(){
+    int num1,num2;
+    printf("before swp\n");
+    printf("enter the number 1: ");
+    scanf("%d",&num1);
+    printf("enter the number 2: ");
+    scanf("%d",&num2);
+    printf("after swp\n");
+    num1=num1+num2;
+    num2=num1-num2;
+    num1=num1-num2;
+    printf("number 1:%d\nnumber 2:%d",num1,num2);
+    
+    return 0;
+}
+
+8)To print the last digit of a number:
+
+#include<stdio.h>
+int main(){
+    int num,lastdigit;
+    printf("enter a value:");
+    scanf("%d",&num);
+    lastdigit=num%10;
+    printf("the last digit of a value is %d",lastdigit);
+    return 0;
+}
+
+9)To print except the last digit of a number:
+
+#include<stdio.h>
+int main(){
+    int num,e_lastdigit;
+    printf("enter a value:");
+    scanf("%d",&num);
+    e_lastdigit=num/10;
+    printf("the number except last digit of a value is %d",e_lastdigit);
+    return 0;
+}
+
+10)To print the first and last digit of a number:
+
+#include<stdio.h>
+int main(){
+    int num,firstdigit,lastdigit;
+    printf("enter a value:");
+    scanf("%d",&num);
+    firstdigit=(num/10)/10;
+    printf("the first digit of a value is %d\n",firstdigit);
+    lastdigit=num%10;
+    printf("the last digit of a value is %d",lastdigit);
+    return 0;
+}
+
+11)To print the middle of the digit:
+
+#include<stdio.h>
+int main(){
+    int num,middigit;
+    printf("enter a value:");
+    scanf("%d",&num);
+    middigit=(num/10)%10;
+    printf("the middle digit of a value is %d\n",middigit);
+    return 0;
+}
+
+12)To print the absolute value:
+
+#include<stdio.h>
+int main(){
+    int num,absvalue;
+    printf("enter a value:");
+    scanf("%d",&num);
+    printf("the abs value is %d",((num<0)?-num:num));
+    return 0;
+}
+
+13)To print the square of the given number:
+
+#include<stdio.h>
+int main(){
+    int num,sqr;
+    printf("enter a value:");
+    scanf("%d",&num);
+    sqr=num*num;
+    printf("the square of the given value is %d",sqr);
+    return 0;
+}
+
+14)To print the cube of the given number:
+
+#include<stdio.h>
+int main(){
+    int num,cub;
+    printf("enter a value:");
+    scanf("%d",&num);
+    cub=num*num*num;
+    printf("the cub of the given value is %d",cub);
+    return 0;
+} 
+
+15)To print the average of three numbers:
+
+#include<stdio.h>
+int main(){
+    int num1,num2,num3,sum,avg;
+    printf("enter a number 1:");
+    scanf("%d",&num1);
+    printf("enter a number 2:");
+    scanf("%d",&num2);
+    printf("enter a number 3:");
+    scanf("%d",&num3);
+    sum=num1+num2+num3;
+    avg=sum/3;
+    printf("the average of the given values are %d",avg);
+    return 0;
+} 
+
+16)To check if the two numbers are equal or not:
+
+#include<stdio.h>
+int main(){
+    int num1,num2;
+    printf("enter a number 1:");
+    scanf("%d",&num1);
+    printf("enter a number 2:");
+    scanf("%d",&num2);
+    printf("the two numbers are equal is %s",(num1=num2)?"true":"false");
+    return 0;
+} 
+
+17)To check whether the given digit is divisible by 2 by using and:
+
+#include<stdio.h>
+int main(){
+    int num;
+    scanf("%d",&num);
+    printf("the given number is divisible by 2 %s",(num>0 && (n&(n-1))==0)?"true":"false");
+    return 0;
+
+18)To print whether the given number is positive or negative:
+
+#include<stdio.h>
+int main(){
+    int num;
+    printf("enter a number :");
+    scanf("%d",&num);
+    printf("the given number is %s",(num>0)?"positive":"negative");
+    return 0;
+} 
+
+19)To find the greatest of three:
+
+#include<stdio.h>
+int main(){
+    int num1,num2,num3;
+    printf("enter a number 1:");
+    scanf("%d",&num1);
+    printf("enter a number 2:");
+    scanf("%d",&num2);
+    printf("enter a number 3:");
+    scanf("%d",&num3);
+    printf("the greatest of three number is %s",(num1>num2 && num1>num3)?"num1":(num2>num3)?"num2":"num3");
+    return 0;
+} 
+
+20)To print fail or pass based on marks:
+
+#include<stdio.h>
+int main(){
+    int num;
+    printf("enter a number :");
+    scanf("%d",&num);
+    printf("the result is %s",(num>35)?"pass":"fail");
+    return 0;
+} 
