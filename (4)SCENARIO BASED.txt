@@ -1,0 +1,261 @@
+SCENARIO BASED
+
+1)To print the price after discount:
+
+#include<stdio.h>
+int main(){
+    int discount,totalamt,finalamt;
+    printf("'Before discount'");
+    printf("\n");
+    printf("enter the amount:");
+    scanf("%d",&totalamt);
+    printf("enter the discount:");
+    scanf("%d%",&discount);
+    finalamt=(totalamt/100)*discount;
+    printf("'After discount'");
+    printf("\n");
+    printf("the final amount is %d",finalamt);
+    return 0;
+}
+
+2)To print the convertion of minutes to seconds:
+
+#include<stdio.h>
+int main(){
+    int mins,secs;
+    printf("enter the minute:");
+    scanf("%d",&mins);
+    secs=mins*60;
+    printf("the number of seconds in the entered minutes are:%dsecs",secs);
+    return 0;
+}
+
+3)To print the amount after splitting among three friends:
+
+#include<stdio.h>
+int main(){
+    int amount,finalamt;
+    printf("enter the total amount:");
+    scanf("%d",&amount);
+    finalamt=amount/3;
+    printf("After splitting");
+    printf("\n");
+    printf("Each friend should pay %drupees",finalamt);
+    return 0;
+}
+
+4)To print the distance travelled:
+
+#include<stdio.h>
+int main(){
+    int timetaken,speed,distance;
+    printf("enter the timetaken(in hrs):");
+    scanf("%d",&timetaken);
+    printf("enter the speed(in kms):");
+    scanf("%d",&speed);
+    distance=speed*timetaken;
+    printf("total distance travelled=%dkms",distance);
+    return 0;
+}
+
+5)To print the kilometres to metres:
+
+#include<stdio.h>
+int main(){
+    float meters,kilometers;
+    printf("enter the kilometres:");
+    scanf("%f",&kilometers);
+    meters=kilometers*1000;
+    printf("the metres in given kilometre is:%.2fm",meters);
+    return 0;
+}
+
+6)To print the bytes to bits:
+
+#include<stdio.h>
+int main(){
+    int bytes,bits;
+    printf("enter the number of bytes:");
+    scanf("%d",&bytes);
+    bits=bytes*8;
+    printf("the number of bits in a given byte:%dbits",bits);
+    return 0;
+}
+
+7)To print the distribution of candies:
+
+#include<stdio.h>
+int main(){
+    int candies,people,distribution;
+    printf("enter the number of candies:");
+    scanf("%d",&candies);
+    printf("enter the number of members:");
+    scanf("%d",&people);
+    distribution=candies/people;
+    printf("number of candies each member get is %d",distribution);
+    return 0;
+}
+
+8)To print the total cakes made:
+
+#include<stdio.h>
+int main(){
+    int cakes,days,total;
+    printf("enter the number of cakes made per day:");
+    scanf("%d",&cakes);
+    printf("enter the total number of days:");
+    scanf("%d",&days);
+    total=cakes*days;
+    printf("the total number of cakes made is %d",total);
+    return 0;
+}
+
+9)To print the simple interests:
+
+#include<stdio.h>
+int main(){
+    float givenamt,rate,timetaken,simpleinterest;
+    printf("enter the given amount:");
+    scanf("%f",&givenamt);
+    printf("enter the rate of interest:");
+    scanf("%f",&rate);
+    printf("enter the timetaken to pay:");
+    scanf("%f",&timetaken);
+    simpleinterest=(givenamt*rate*timetaken)/100;
+    printf("The simple interest is %.2f",simpleinterest);
+    return 0;
+}
+
+10)To print the salary of employee:
+
+#include<stdio.h>
+int main(){
+    int salary,employees,total;
+    printf("enter the salary of a single employee:");
+    scanf("%d",&salary);
+    printf("enter the total number of employees:");
+    scanf("%d",&employees);
+    total=salary*employees;
+    printf("The total amount of salary given to the employees is %d",total);
+    return 0;
+}
+
+11)To print the selling price(given cost price and profit):
+
+#include<stdio.h>
+int main(){
+    int costprice,profit,sellingprice;
+    printf("enter the cost price:");
+    scanf("%d",&costprice);
+    printf("enter the profit:");
+    scanf("%d",&profit);
+    sellingprice=costprice+profit;
+    printf("The selling price is %d",sellingprice);
+    return 0;
+}
+
+12)To print the cost price(given selling price and loss):
+
+#include<stdio.h>
+int main(){
+    int costprice,loss,sellingprice;
+    printf("enter the selling price:");
+    scanf("%d",&sellingprice);
+    printf("enter the loss:");
+    scanf("%d",&loss);
+    costprice=sellingprice+loss;
+    printf("The cost price is %d",costprice);
+    return 0;
+}
+
+13)To print the mangoes discount:
+
+#include<stdio.h>
+int main(){
+    int initialamt,initialmangoes,freemangoes,finalmangoes,finalamt;
+    printf("enter the total number of mangoes:");
+    scanf("%d",&initialmangoes);
+    printf("the cost of one mango:");
+    scanf("%d",&initialamt);
+    freemangoes=initialmangoes/4;
+    printf("the number of free mangoes are %d",freemangoes);
+    printf("\n");
+    finalmangoes=initialmangoes-freemangoes;
+    printf("the number mangoes to be paid %d",finalmangoes);
+    printf("\n");
+    finalamt=finalmangoes*initialamt;
+    printf("the amount that is paid to the mangoes is %d",finalamt);
+    return 0;
+}
+
+14)To print the pens discount:
+
+#include<stdio.h>
+int main(){
+    int initialamt,initialpen,freepens,finalpens,finalamt;
+    printf("enter the total number of pens:");
+    scanf("%d",&initialpen);
+    printf("the cost of one pen:");
+    scanf("%d",&initialamt);
+    freepens=initialpen/5;
+    printf("the number of free pens are %d",freepens);
+    printf("\n");
+    finalpens=initialpen-freepens;
+    printf("the number pens to be paid %d",finalpens);
+    printf("\n");
+    finalamt=finalpens*initialamt;
+    printf("the amount that is paid to the pens is %d",finalamt);
+    return 0;
+}
+
+15)To print the currency notes:
+
+#include<stdio.h>
+int main(){
+    int initialamt,first,firstnum,firstcur,second,secondnum,secondcur,third,thirdnum,thirdcur,m,n,l;
+    printf("enter the amount you need:");
+    scanf("%d",&initialamt);
+    
+    m=initialamt%1000;
+    first=initialamt-m;
+    printf("the first cash is %d\n",first);
+    firstnum=first/1000;
+    firstcur=first/firstnum;
+    printf("the number of currencies:%d\n",firstnum);
+    printf("the first currency is %d\n",firstcur);
+    printf("\n");
+
+    n=m%100;
+    second=m-n;
+    printf("the second cash is %d\n",second);
+    secondnum=second/100;
+    secondcur=second/secondnum;
+    printf("the number of currencies:%d\n",secondnum);
+    printf("the second currency is %d\n",secondcur);
+    printf("\n");
+
+    l=n%10;
+    third=n-l;
+    printf("the third cash is %d\n",third);
+    thirdnum=third/10;
+    thirdcur=third/thirdnum;
+    printf("the number of currencies:%d\n",thirdnum);
+    printf("the first currency is %d",thirdcur);
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
