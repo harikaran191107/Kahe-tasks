@@ -1,0 +1,157 @@
+GEOMETRY BASED
+
+1)To check whether a triangle is equilateral,isosceles or scalene:
+
+#include<stdio.h>
+int main(){
+    int side1,side2,side3;
+    printf("enter the values of the side 1=");
+    scanf("%d",&side1);
+    printf("enter the values of the side 2=");
+    scanf("%d",&side2);
+    printf("enter the values of the side 3=");
+    scanf("%d",&side3);
+    if(side1==side2 && side1==side3){
+        printf("it is an equilateral triangle");
+    }
+    else if(side1==side2 || side2==side3 || side3==side1){
+        printf("it is an isosceles triangle");
+    }
+    else{
+        printf("it is a scalene triangle");
+    }
+    return 0;
+}
+
+2)To check whether the triangle is right angle or not:
+
+#include<stdio.h>
+#include<math.h>
+int main(){
+    int opp,adj,hyp,formula;
+    printf("enter the value of opposite side:");
+    scanf("%d",&opp);
+    printf("enter the value of adjacent side:");
+    scanf("%d",&adj);
+    printf("enter the value of hypotenuse side:");
+    scanf("%d",&hyp);
+    formula=sqrt((opp*opp)+(adj*adj));
+    if(hyp==formula){
+        printf("the given triangle is an right angled triangle");
+    }
+    else{
+        printf("the given triangle is not an right angled triangle");
+    }
+    return 0;
+}
+
+3)To check whether the points(x,y) lies which quadrant:
+
+#include<stdio.h>
+int main(){
+    int x,y;
+    printf("enter the value of x:");
+    scanf("%d",&x);
+    printf("enter the value of y:");
+    scanf("%d",&y);
+    if(x>0 && y>0){
+        printf("the point lies in 1st(+,+) quadrant");
+    }
+    else if(x<0 && y>0){
+        printf("the point lies in 2nd(-,+) quadrant");
+    }
+    else if(x<0 && y<0){
+        printf("the point lies in 3rd(-,-) quadrant");
+    }
+    else{
+        printf("the point lies in 4th(+,-) quadrant");
+    }
+    return 0;
+}
+
+4)To check whether the three angles forms a valid triangle:
+
+#include<stdio.h>
+int main(){
+    int angle1,angle2,angle3,sum;
+    printf("enter the value of angle 1:");
+    scanf("%d",&angle1);
+    printf("enter the value of angle 2:");
+    scanf("%d",&angle2);
+    printf("enter the value of angle 3:");
+    scanf("%d",&angle3);
+    sum=angle1+angle2+angle3;
+    printf("sum of three angles=%d",sum);
+    printf("\n");
+    if(sum==180){
+        printf("it forms a valid triangle");
+    }
+    else{
+        printf("it does not forms a valid triangle");
+    }
+    return 0;
+}
+
+5)To check whether the three sides forms a valid triangle:
+
+#include<stdio.h>
+int main(){
+    int side1,side2,side3,condition1,condition2,condition3;
+    printf("enter the value of side 1:");
+    scanf("%d",&side1);
+    printf("enter the value of side 2:");
+    scanf("%d",&side2);
+    printf("enter the value of side 3:");
+    scanf("%d",&side3);
+    condition1=(side1+side2)>side3;
+    condition2=(side2+side3)>side1;
+    condition1=(side3+side1)>side2;
+    if(condition1 && condition2 && condition3){
+        printf("it forms a valid triangle");
+    }
+    else{
+        printf("it does not forms a valid triangle");
+    }
+    return 0;
+}
+
+6)To check whether the four sides forms a valid square or rectangle:
+
+#include<stdio.h>
+int main(){
+    int side1,side2,side3,side4;
+    printf("enter the value of side 1:");
+    scanf("%d",&side1);
+    printf("enter the value of side 2:");
+    scanf("%d",&side2);
+    printf("enter the value of side 3:");
+    scanf("%d",&side3);
+    printf("enter the value of side 4:");
+    scanf("%d",&side4);
+    if(side1==side2 && side2==side3 && side3==side4 && side4==side1){
+        printf("it forms a valid square");
+    }
+    else if(side1==side3 && side2==side4){
+        printf("it forms a valid rectangle");
+    }
+    else{
+        printf("it does not form any square or rectangle");
+    }
+    return 0;
+}
+
+7)To print the distance between the two points:
+
+#include<stdio.h>
+#include<math.h>
+int main(){
+    int x1,x2,y1,y2,distance;
+    printf("enter the point1:");
+    scanf("%d%d",&x1,&y1);
+    printf("enter the point2:");
+    scanf("%d%d",&x2,&y2);
+    distance=sqrt(((x2-x1)*(x2-x1))+((y2-y1)*(y2-y1)));
+    printf("distance between the two points=%f",distance);
+    return 0;
+}
+
